@@ -2,41 +2,62 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    /* Set the background image */
+    background-image: url('agriculture/pexels-markus-spiske-95215.jpg');
+    background-size: cover; /* Cover the entire background */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    background-position: center; /* Center the background image */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 50%; /* Adjust the size of the background image */
+    margin: auto; /* Center the background image horizontally */
 }
 
-.container {
+.chat-container {
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9); /* Set background color with opacity */
 }
 
-h1 {
-    text-align: center;
+.heading {
+    font-weight: bold;
+    color: blue; /* Change the color of the heading text */
 }
 
-#chat-container {
-    height: 300px;
-    overflow-y: scroll;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
+.instructions {
+    margin-bottom: 20px; /* Add bottom margin to the instructions paragraph */
+}
+
+.question-list li,
+#bot-response {
+    font-weight: italic; /* Make question list items and bot responses italic */
+}
+
+input[type="text"] {
+    width: 80%;
     padding: 10px;
-}
-
-#user-input {
-    width: calc(100% - 70px);
-    margin-right: 10px;
-    padding: 5px;
-    border-radius: 3px;
+    margin-top: 10px;
     border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 button {
-    padding: 5px 10px;
-    border-radius: 3px;
+    padding: 10px 20px;
+    margin-top: 10px;
     background-color: #007bff;
     color: #fff;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+}
+
+#bot-response {
+    margin-top: 20px;
+    font-style: italic;
 }
